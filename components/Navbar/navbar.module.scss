@@ -1,0 +1,152 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    height: calc(48px + var(--panel-gap) * 2);
+    margin: calc(var(--panel-gap) * -1);
+    padding: var(--panel-gap);
+    padding-left: calc(var(--panel-gap) * 2);
+    position: relative;
+    background-color: #000;
+  }
+  
+  .logoSpotify {
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .svgLogo {
+    filter: invert(1);
+    transition: transform 0.2s ease-in-out;
+    padding-left: 20px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+.container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    flex: 1;
+}
+
+.center {
+    max-width: 546px;
+    min-width: 350px;
+    width: 50%;
+    display: flex;
+}
+
+.buttonHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    margin-inline-start: 8px;
+    border-radius: 50%;
+    background-color: #2e2e2e;
+    color: #fff;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: auto;
+}
+
+.spanButton {
+    display: flex;
+
+}
+
+.svgLogoHome {
+    filter: invert(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.spanSearchBar {
+  height: 100%;
+  width: 100%;
+  margin-inline-start: 8px;
+}
+
+.searchBar {
+  padding-inline: 8px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.iconSearch {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+.svgLogoSearch {
+  filter: invert(1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.fieldSearch {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  min-height: 35px;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: #2e2e2e;
+  border-radius: 128px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    outline: 2px solid #fff;
+  }
+}
+
+.iconBrowser {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+.iconWrapper {
+  padding-inline: 12px 4px;
+  border-inline-start: 1px solid #2e2e2e;
+}
