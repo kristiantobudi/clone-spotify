@@ -12,8 +12,8 @@ export default function Navbar() {
         <Link href="#" className={styles.linkLogo}>
           <Image
             src={spotifyLogo}
-            width={50}
-            height={50}
+            width={35}
+            height={35}
             alt="Spotify"
             className={styles.svgLogo}
           />
@@ -60,6 +60,10 @@ export default function Navbar() {
             </div>
           </span>
         </div>
+      </div>
+      <div className={styles.containerInstallApp}>
+        <button className={styles.buttonExplore}></button>
+        <Link href="#" className={styles.linkInstallApp}></Link>
       </div>
     </div>
   );

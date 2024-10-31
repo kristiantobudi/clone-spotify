@@ -52,10 +52,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem;
+    padding: 0.50rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-inline-start: 8px;
     border-radius: 50%;
-    background-color: #2e2e2e;
+    background-color: var(--background-spacing-base);
     color: #fff;
     flex-shrink: 0;
     border: none;
@@ -76,9 +78,16 @@
 }
 
 .spanSearchBar {
+  display: flex;
   height: 100%;
   width: 100%;
   margin-inline-start: 8px;
+}
+
+.searchLogo {
+  fill: currentColor;
+  width: var(--spacing-graphic-size-decorative-base, 24px);
+  height: var(--spacing-graphic-size-decorative-base, 24px);
 }
 
 .searchBar {
@@ -125,7 +134,7 @@
   color: #fff;
   font-size: 1.25rem;
   text-align: center;
-  background-color: #2e2e2e;
+  background-color: var(--background-spacing-base);
   border-radius: 128px;
   border: none;
   outline: none;
@@ -149,4 +158,46 @@
 .iconWrapper {
   padding-inline: 12px 4px;
   border-inline-start: 1px solid #2e2e2e;
+}
+
+.buttonExplore {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0px;
+  border-radius: var(--spacing-button-corner-radius, 9999px);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.containerInstallApp {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.linkInstallApp {
+  font-weight: 700;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0px;
+  border-radius: var(--spacing-button-corner-radius, 9999px);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter, transform;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  padding: 0px;
+  min-inline-size: 0px;
+  align-self: center;
 }
