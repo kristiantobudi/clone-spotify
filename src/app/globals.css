@@ -5,17 +5,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  --background-base: #121212;
+  --background-highlight: #1f1f1f;
+  --background-press: #000;
+  --background-elevated-base: #1f1f1f;
+  --text-base: #fff;
+  --text-subdued: #b3b3b3;
+  --text-bright-accent: #1ed760;
+  --text-negative: #f3727f;
+  --text-warning: #ffa42b;
+  --text-positive: #1ed760;
+  --text-announce: #4cb3ff;
 }
